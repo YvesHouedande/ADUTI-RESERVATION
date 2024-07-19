@@ -1,5 +1,4 @@
-templates/reservation_form.html
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,24 +12,7 @@ templates/reservation_form.html
             font-family: 'Arial', sans-serif;
             background-color: #f3f4f6;
         }
-
-        .hero {
-            background-color: #1a202c;
-            color: #ffffff;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-        }
+        
 
         .form-container {
             max-width: 600px;
@@ -83,9 +65,8 @@ templates/reservation_form.html
 
 <body>
 
-    <div class="hero">
-        <h1 class="text-4xl">Dîner ADUTI 2024</h1>
-        <p class="text-lg">Réseau avec les membres de l'ADUTI lors de notre dîner annuel le 30 août 2024.</p>
+    <div class="">
+        <img src="{% static 'img/crea2.jpg' %}" alt="contenu">
     </div>
 
     <div class="form-container">
